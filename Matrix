@@ -1,0 +1,57 @@
+Scanner input = new Scanner(System.in);        
+        int [][]A = new int[2][3];
+        int [][]B = new int[2][3];
+        int [][]C = new int[2][3];
+        
+       // input for A Matrix
+        System.out.println("Enter value for A Matrix : ");
+        for (int row = 0; row < 2; row++) {
+            for (int col = 0; col < 3; col++) {
+                System.out.printf("A[%d][%d] = ",row,col);
+                A[row][col]= input.nextInt();
+            }            
+        }
+       
+// input for B Matrix
+        System.out.println("Enter value for B Matrix : ");
+        for (int row = 0; row < 2; row++) {
+            for (int col = 0; col < 3; col++) {
+                System.out.printf("B[%d][%d] = ",row,col);
+                B[row][col]= input.nextInt();
+            }            
+        }
+        // print for A matrix
+        System.out.println("A Matrix  = ");
+        for (int row = 0; row < 2; row++) {
+            for (int col = 0; col < 3; col++) {
+                System.out.print(" "+A[row][col]);
+                
+            }
+            System.out.println();
+            
+        }
+        // print for B matrix
+        System.out.println("B Matrix  = ");
+        for (int row = 0; row < 2; row++) {
+            for (int col = 0; col < 3; col++) {
+                System.out.print(" "+B[row][col]);
+                
+            }
+            System.out.println();
+            
+        }
+        System.out.println("C Matrix is : \n");
+        
+        // A + B Matrix Addition
+        for (int row = 0; row < 2; row++) {
+            for (int col = 0; col < 3; col++) {
+                
+                C[row][col] = A[row][col] + B[row][col];
+                System.out.print("  "+C[row][col]);
+                
+            }
+            System.out.println();
+            
+        }
+        
+    }
